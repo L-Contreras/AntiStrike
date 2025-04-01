@@ -1,0 +1,10 @@
+.baninfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teampagebutton {
+    height: 30px;
+    width: 80px;
+}

@@ -1,0 +1,26 @@
+.about-container {
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 0 auto;
+    border-radius: 40px;
+}
+
+.faq-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-container h3 {
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.faq-container p {
+    font-size: 25px;
+}

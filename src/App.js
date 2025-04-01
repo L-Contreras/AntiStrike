@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import TeamInfo from './components/Team/TeamInfo';
+import Home from './components/Home/Home';
+
+import { useState } from 'react';
 
 function App() {
+  const [teamData, setTeamData] = useState(null);
+  const [teamName, setTeamName] = useState('');
+  const [teamLogo, setTeamLogo] = useState('');
+  const [teamId, setTeamId] = useState('');
+
+  const isTeamSelected = teamData && teamData.length > 0 && teamName !== '';
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setTeamData={setTeamData} setTeamName={setTeamName} setTeamLogo={setTeamLogo} setTeamId={setTeamId}/>
+      {/* show home page when no team is searched */}
+      {!isTeamSelected ? <Home/> : <TeamInfo teamData={teamData} teamName={teamName} teamLogo={teamLogo} teamId={teamId}/>}
     </div>
   );
 }

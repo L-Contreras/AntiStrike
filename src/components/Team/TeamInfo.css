@@ -1,0 +1,166 @@
+.teaminfoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: fit-content;
+    height: 300px;
+    margin-bottom: 30px;    
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 20px;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Team info */
+.teaminfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 500px;
+    align-items: center;
+
+}
+
+.team-logo {
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+}
+
+/* Team stats and bans */
+
+.teamleagueinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    align-items: center ;
+}
+
+/* maps */
+.match-box {
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;;
+    gap: 20px;
+
+}
+
+.matches-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.map-bans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 20px;
+}
+
+.ban-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 5px;
+    width: 500px;
+    height: 100%; 
+}
+
+.ban-item {
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: lightgray;;
+    display: flex;
+    padding-left: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+/* match vs info */
+.match-map-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+}
+
+.resultWL {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultWL h2 {
+    margin-top: auto;
+}
+
+.resultWL p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.map-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.map-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 4px black solid;
+}
+
+.matchvsinfo {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-schedule-time {
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-schedule-time h2,
+.match-schedule-time p {
+    margin: 0;  /* Removes spacing between h2 and p */
+    line-height: 1.2;  /* Reduces text spacing */
+}
+
+.match-schedule-time p {
+    font-size: 20px;
+}
