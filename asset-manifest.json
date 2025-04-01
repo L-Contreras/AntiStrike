@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AntiStrike/static/css/main.e8a41084.css",
+    "main.js": "/AntiStrike/static/js/main.4393a878.js",
+    "static/media/dust2.webp": "/AntiStrike/static/media/dust2.b4fdac43df87180cf8fa.webp",
+    "static/media/anubis.webp": "/AntiStrike/static/media/anubis.a14b9e2c2035914d8555.webp",
+    "static/media/inferno.jpeg": "/AntiStrike/static/media/inferno.187dda75186f50ff49ae.jpeg",
+    "static/media/ancient.webp": "/AntiStrike/static/media/ancient.e1386388dc10b0e3cbdf.webp",
+    "static/media/mirage.webp": "/AntiStrike/static/media/mirage.488b2883bf7837cddbcc.webp",
+    "static/media/nightmirage.webp": "/AntiStrike/static/media/nightmirage.39519ea4b9bc8c9bffd4.webp",
+    "static/media/nuke.webp": "/AntiStrike/static/media/nuke.b88f4cb6a6b084909711.webp",
+    "static/media/train.webp": "/AntiStrike/static/media/train.667f1eecd9c29dc22a2c.webp",
+    "static/media/missing.webp": "/AntiStrike/static/media/missing.d4b591613ebd1ceb42b9.webp",
+    "index.html": "/AntiStrike/index.html",
+    "main.e8a41084.css.map": "/AntiStrike/static/css/main.e8a41084.css.map",
+    "main.4393a878.js.map": "/AntiStrike/static/js/main.4393a878.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8a41084.css",
+    "static/js/main.4393a878.js"
+  ]
+}
