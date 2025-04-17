@@ -164,3 +164,15 @@
 .match-schedule-time p {
     font-size: 20px;
 }
+
+.match-result {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .match-result.win {
+    color: green;
+  }
+  .match-result.loss {
+    color: red;
+  }
+  

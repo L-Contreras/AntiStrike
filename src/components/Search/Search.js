@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Search.css';
-import faceitData from '../../data/faceitData.json';
 
 
 function SearchBar( { setTeamData, setTeamName, setTeamLogo, setTeamId }) {
@@ -15,8 +14,6 @@ function SearchBar( { setTeamData, setTeamName, setTeamLogo, setTeamId }) {
     const handleSeasonChange = (e) => setSelectedSeason(e.target.value);
     const handleDivisionChange = (e) => setSelectedDivision(e.target.value);
 
-
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         await getTeamBans(searchQuery.toLowerCase());
@@ -29,23 +26,27 @@ function SearchBar( { setTeamData, setTeamName, setTeamLogo, setTeamId }) {
         let teamLogo = '';
         let teamId = '';
 
-        // will put functinon to call api
-        const matches = faceitData[selectedSeason]?.[selectedDivision] || [];
-        if (!matches || matches.length === 0) {
-            console.log('No matches found');
-            return;
-        }
+        try {
+            const season = selectedSeason;
+            const division = selectedDivision;
+            const team = searchQuery;
+            const baseUrl = process.env.REACT_APP_API_BASE_URL;
+            const url = `${baseUrl}/search?season=${season}&division=${division}&team=${team}`;
+            const response = await fetch(url);
+            const data = await response.json();
 
-        for (const match of matches) {
-            if (teamToFind === match.name.toLowerCase()) {
-                foundTeam = match.name;
-                teamLogo = match.avatar_url;
-                teamId = match.team_id;
-                updatedMatches.push(...match.matches);
+            foundTeam = data.team["team_name"];
+            teamLogo = data.team["team_avatar_url"];
+            teamId = data.team["team_id"];
+
+            for (const match of data.matches) {
+                updatedMatches.push(match);
             }
 
+        } catch (error) {
+            console.log(error);
         }
-        
+
         updatedMatches.sort((a, b) => a.schedule - b.schedule);
         setTeamName(foundTeam);
         setTeamLogo(teamLogo);
@@ -57,8 +58,8 @@ function SearchBar( { setTeamData, setTeamName, setTeamLogo, setTeamId }) {
         <form onSubmit={handleSubmit} className="search-container">
             <select className="selectbox" value={selectedSeason} onChange={handleSeasonChange}>
                 <option value="">Select Season</option>
-                <option value="season52">Season 52</option>
-                <option value="season53">Season 53</option>
+                <option value="52">Season 52</option>
+                <option value="53">Season 53</option>
             </select>
 
             <select className="selectbox" value={selectedDivision} onChange={handleDivisionChange}>
