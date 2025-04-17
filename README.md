@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# AntiStrike 🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AntiStrike is a React-based web application that provides map pick and ban information for teams competing in the Main, Advanced, and ECL divisions of competitive CS2.
 
-## Available Scripts
+The site helps teams, analysts, and fans search and explore team veto history across different seasons and divisions, using data pulled from multiple Faceit API endpoints and stored in a PostgreSQL database.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+🚀 **Live Demo**  
+Check out the live site here: [AntiStrike on GitHub Pages](https://l-contreras.github.io/AntiStrike/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🛠 **Tech Stack**  
+- Frontend: React.js, HTML5, CSS3  
+- State Management: useState, Props  
+- Backend: AWS RDS (PostgreSQL), Python for data ETL  
+- API Integration: Faceit APIs, JSON parsing  
+- Deployment: GitHub Pages
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔍 **Features**  
+- 🔎 Search by team, division, and season  
+- 📊 View full map veto data per match  
+- ⚙️ Aggregates data from multiple API endpoints  
+- ⚡ Fast lookup via locally cached PostgreSQL database  
+- 💡 Designed for teams looking to optimize their preparation and practice
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📡 **APIs & Data Flow**  
+Due to limitations in the Faceit API, AntiStrike pulls data from multiple endpoints and compiles them into a complete data set. This data is automatically processed and stored in a PostgreSQL database hosted on AWS RDS. The frontend then queries this optimized data source to deliver a fast and complete user experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 **Lessons Learned**  
+- Working with multiple APIs and combining data to solve limitations in third-party services  
+- Automating data collection and transformation using Python and PostgreSQL  
+- Managing state effectively in React with `useState` and conditional rendering  
+- Deploying a React app via GitHub Pages  
+- Optimizing performance by serving from a centralized backend database
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🤝 **Acknowledgments**  
+- FACEIT API for providing match and team data  
+- The CS2 and esports community for inspiration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📬 **Contact**  
+Built by **Luis Contreras**  
+- GitHub: [github.com/csxlouis](https://github.com/csxlouis)  
+- LinkedIn: [linkedin.com/in/luis-frontend](https://www.linkedin.com/in/luis-frontend)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
