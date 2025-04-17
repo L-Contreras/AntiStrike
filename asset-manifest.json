@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AntiStrike/static/css/main.e8a41084.css",
-    "main.js": "/AntiStrike/static/js/main.4393a878.js",
+    "main.css": "/AntiStrike/static/css/main.5fa89d6d.css",
+    "main.js": "/AntiStrike/static/js/main.aa5a7d4b.js",
     "static/media/dust2.webp": "/AntiStrike/static/media/dust2.b4fdac43df87180cf8fa.webp",
     "static/media/anubis.webp": "/AntiStrike/static/media/anubis.a14b9e2c2035914d8555.webp",
     "static/media/inferno.jpeg": "/AntiStrike/static/media/inferno.187dda75186f50ff49ae.jpeg",
@@ -12,11 +12,11 @@
     "static/media/train.webp": "/AntiStrike/static/media/train.667f1eecd9c29dc22a2c.webp",
     "static/media/missing.webp": "/AntiStrike/static/media/missing.d4b591613ebd1ceb42b9.webp",
     "index.html": "/AntiStrike/index.html",
-    "main.e8a41084.css.map": "/AntiStrike/static/css/main.e8a41084.css.map",
-    "main.4393a878.js.map": "/AntiStrike/static/js/main.4393a878.js.map"
+    "main.5fa89d6d.css.map": "/AntiStrike/static/css/main.5fa89d6d.css.map",
+    "main.aa5a7d4b.js.map": "/AntiStrike/static/js/main.aa5a7d4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8a41084.css",
-    "static/js/main.4393a878.js"
+    "static/css/main.5fa89d6d.css",
+    "static/js/main.aa5a7d4b.js"
   ]
 }
